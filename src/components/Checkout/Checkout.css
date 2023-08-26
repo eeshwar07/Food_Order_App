@@ -1,0 +1,27 @@
+.label {
+  font-size: larger;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.buttons {
+  font: inherit;
+  cursor: pointer;
+  background-color: #8a2b06;
+  border: 1px solid #8a2b06;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-top: 15px;
+  color: aliceblue;
+}
+
+.error-text {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: red;
+}
+
+.order-text {
+  text-align: center;
+}
