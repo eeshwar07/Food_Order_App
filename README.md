@@ -11,7 +11,7 @@ Welcome to the Food Order Application, where your delicious desires meet modern 
 * After the installation is done, to run the project, run the command 'npm start'.
 * Open localhost:3000 on any web browser to run the project.
 
-This project is hosted on [https://main--friendly-granita-859610.netlify.app/](https://main--friendly-granita-859610.netlify.app/)
+This project is hosted on [https://food-order-ap.netlify.app/](https://food-order-ap.netlify.app/)
 
 
 
