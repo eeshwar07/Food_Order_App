@@ -11,7 +11,6 @@ function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
   const [checkout, setCheckout] = useState(false);
   const cartcxt = useContext(CartContext);
-  console.log(CartContext.items, cartcxt.items);
 
   const showCartHandler = () => {
     setCartIsShown(true);

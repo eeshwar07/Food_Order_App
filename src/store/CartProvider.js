@@ -9,7 +9,6 @@ const defaultCartState = {
 
 const cartReducer = (state, action) => {
   if (action.type === "ADD") {
-    console.log(state.totalAmount);
     const updatedTotalAmount = state.totalAmount + action.item.price;
 
     const existingCartItemIndex = state.items.findIndex(
@@ -87,7 +86,6 @@ const CartProvider = (props) => {
     removeItem: removeItemFromCartHandler,
     clearCart: clearCartHandler,
   };
-  console.log(cartContext);
   return (
     <CartContext.Provider value={cartContext}>
       {props.children}

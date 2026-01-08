@@ -5,7 +5,6 @@ import CartContext from "../../store/cart-context";
 
 export default function Checkout(props) {
   const cartcxt = useContext(CartContext);
-  console.log(CartContext, cartcxt.items);
 
   const [userInput, setuserInput] = useState({
     name: "",
@@ -14,7 +13,6 @@ export default function Checkout(props) {
   });
 
   const userData = { items: [...cartcxt.items], ...userInput };
-  //   console.log(userData);
 
   const [error, seterror] = useState(false);
   const [errorMessage, seterrorMessage] = useState("");
@@ -57,8 +55,6 @@ export default function Checkout(props) {
       }
     );
     const data = await response.json();
-    // console.log(data);
-
     setpaymentFlag(false);
   }
 
@@ -66,7 +62,6 @@ export default function Checkout(props) {
     props.onClose();
     cartcxt.clearCart();
   };
-  console.log(cartcxt.items);
   return (
     <Modal onClose={props.onClose}>
       {paymentFlag ? (
