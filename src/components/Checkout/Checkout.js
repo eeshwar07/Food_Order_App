@@ -54,7 +54,6 @@ export default function Checkout(props) {
         body: JSON.stringify(userData),
       }
     );
-    const data = await response.json();
     setpaymentFlag(false);
   }
 

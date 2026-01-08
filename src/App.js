@@ -1,16 +1,14 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./store/CartProvider";
 import Checkout from "./components/Checkout/Checkout";
-import CartContext from "./store/cart-context";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
   const [checkout, setCheckout] = useState(false);
-  const cartcxt = useContext(CartContext);
 
   const showCartHandler = () => {
     setCartIsShown(true);
